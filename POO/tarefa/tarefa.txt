@@ -1,0 +1,62 @@
+
+1. Criar um arquivo com uma classe Carro e:
+
+- Adicionar um atributo final do tipo String chamado marca que vai ser setado através do construtor por meio de parâmetro de posição usando this;
+
+- Adicionar um atributo final do tipo int chamado numeroDePortas que vai ser setado através do construtor por meio de parâmetro de posição usando this;
+
+- Adicionar um atributo do tipo bool privado chamado automatico que vai ser inicializado como falso e poderá ser setado através do construtor por meio de parâmetro nomeado opcional. 
+Caso o parâmetro seja nulo setar automatico falso, caso contrário setar o valor do parâmetro. 
+E também terá uma função get chamada getAutomatico que retornará uma String para os seguintes casos:
+
+Supondo que a marca do carro seja Ferrari:
+
+Caso o carro tenha automatico setado para verdadeiro:
+
+Retornar: "Esse carro da marca Ferrari é automático";
+
+Caso o carro tenha automático setado para falso:
+
+Retornar "Esse carro da marca Ferrari não é automático;
+
+- Adicionar um atributo bool estático que não pode ser alterado chamado contemMotor setado como verdadeiro;
+
+- Adicionar um atributo privado do tipo String chamado cor setado para preto;
+
+- Criar um set chamado setCor e um get chamado getCor para a variável cor;
+
+- Adicionar uma função estática chamada fazerRoncoDoMotor que não retorna nada e que vai imprimir "Vruummm vruummm";
+
+- Criar uma função chamada imprimirNumeroDePortas que não retorna nada e vai imprimir o número de portas;
+
+Exemplo:
+
+Supondo que a marca do carro seja BMW:
+
+Para o número de portas igual a 4 imprimir: "Esse carro da marca BMW possui 4 portas".
+
+2. Criar um novo arquivo e:
+
+- Criar um objeto da classe Carro chamado carro1 com os seguintes parâmetros:
+
+  marca = Chevrolet
+
+  numeroDePortas = 4
+
+  automatico = false
+
+- Invocar as funções getAutomatico, fazerRoncoDoMotor e imprimirNumeroDePortas;
+
+- Criar um objeto da classe Carro chamado carro2 com os seguintes parâmetros:
+
+  marca = Hyundai
+
+  numeroDePortas = 3
+
+  automatico = true
+
+- Invocar as funções getAutomatico, fazerRoncoDoMotor, imprimirNumeroDePortas e getCor;
+
+- trocar a cor do carro2 para verde;
+
+- Invocar a função getCor novamente;
