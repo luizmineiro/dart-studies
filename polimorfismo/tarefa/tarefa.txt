@@ -1,0 +1,81 @@
+​- Criar uma classe abstrata chamada Monstro e adicionar os seguintes atributos e métodos para ela:
+
+  1. Uma variável final do tipo String chamada nome;
+
+  2. Uma variável do tipo num chamada pontosDeVida;
+
+  3. Um contrutor onde o usuário precisará adicionar parâmetros nomeados chamados
+
+     nome e pontosDeVida;
+
+  4. Um método abstráto que não retorna nada chamado atacar.
+
+- Criar uma classe chamada Esqueleto que vai estender Monstro e adicionar:
+
+  1. Um contrutor onde o usuário precisará adicionar parâmetros nomeados chamados
+
+     nome e pontosDeVida que vão ser passados para a classe pai (Monstro);
+
+  2. Implementar o método atacar onde será impresso no console a seguinte frase "$nome do tipo
+
+     Esqueleto está atacando!";
+
+  3. Um método que não retorna nada chamado ataqueDeOssos onde será impresso no console a seguinte
+
+     frase "$nome do tipo Esqueleto faz um ataque de ossos!".
+
+- Criar uma classe chamada Bruxo que vai estender Monstro e adicionar:
+
+  1. Uma variável do tipo int chamada numeroDePocoes (número de poções);
+
+  2. Um contrutor onde o usuário precisará adicionar parâmetros nomeados nome e pontosDeVida que vão
+
+     ser passados para a classe pai (Monstro) e numeroDePocoes inicializado com 1;
+
+  3. Implementar o método atacar onde será impresso no console a seguinte frase "$nome do tipo
+
+     Bruxo está atacando!";
+
+  4. Um método que retorna um inteiro chamado usarPocao (usar poção) que vai decrementar o numeroDePocoes
+
+     (subtrair 1 de numeroDePocoes), imprimir na tela "Gulp" (simulando tomando a poção) e retornar
+
+     o numeroDePocoes.
+
+- Criar um mixin chamado Voar e adicionar:
+
+  1. Um método que não retorna nada chamado voar onde será impresso no console a seguinte
+
+     frase "Voando!".
+
+- Criar uma classe chamada Dragao que vai estender Monstro e adicionar:
+
+  1. Um contrutor onde o usuário precisará adicionar parâmetros nomeados nome e pontosDeVida que vão
+
+     ser passados para a classe pai (Monstro);
+
+  2. Implementar o método atacar onde será impresso no console a seguinte frase "$nome do tipo
+
+     Dragão está atacando!";
+
+  3. Um método que não retorna nada chamado cuspirFogo onde será impresso no console a seguinte
+
+     frase "$nome do tipo Dragao faz um ataque de cuspir fogo!";
+
+  4. Adicionar o mixin Voar no Dragao.
+
+- Criar um novo arquivo com a função main() para ponto de partida do dart e:
+
+  1. Criar um objeto da classe Esqueleto com nome e pontosDeVida que quiser;
+
+  2. Invocar os métodos atacar e ataqueDeOssos;
+
+  3. Criar um objeto da classe Bruxo com nome, pontosDeVida e numeroDePocoes que quiser;
+
+  4. Invocar os método atacar;
+
+  5. Imprimir o método usarPocao (lembrando que ele retorna um inteiro);
+
+  6. Criar um objeto da classe Dragao com nome e pontosDeVida que quiser;
+
+  7. Invocar os métodos atacar, cuspirFogo e voar todos usando notação em cascata.
