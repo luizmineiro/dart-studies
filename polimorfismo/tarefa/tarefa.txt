@@ -4,7 +4,7 @@
 
   2. Uma variável do tipo num chamada pontosDeVida;
 
-  3. Um contrutor onde o usuário precisará adicionar parâmetros nomeados chamados
+  3. Um construtor onde o usuário precisará adicionar parâmetros nomeados chamados
 
      nome e pontosDeVida;
 
