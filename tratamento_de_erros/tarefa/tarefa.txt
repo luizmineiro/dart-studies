@@ -1,0 +1,31 @@
+​- Criar uma lista de nomes com nomes aleatórios incluindo o seu contendo pelo menos 4 nomes;
+
+- Criar duas Exceptions, uma chamada NomeException e outra chamada TamanhoDaListaException, ambas terão
+
+  uma variável final String erro e um construtor onde será passado o erro por parâmetro de posição;
+
+- Caso o tamanho da lista seja maior que 3 (ela vai ser maior que 3 de início já que a lista
+
+  contém pelo menos 4 nomes) jogar (throw) uma exceção TamanhoDaListaException;
+
+- Fazer um for na lista e caso o nome seja o seu, jogar a exceção NomeException com uma mensagem
+
+  "O nome $nome não é válido nesse aplicativo";
+
+- Tratar o erro NomeException como erro específico (on) e imprimir a mensagem de erro;
+
+- Tratar o erro TamanhoDaListaException como erro genérico, checar se o erro é (is) TamanhoDaListaException,
+
+  se for, imprimir a mensagem de erro;
+
+- Na última linha do código imprimir no console "Fim da aplicação";
+
+- Rodar o programa e ler a Exceção de TamanhoDaListaException;
+
+- Remover nomes da lista que não seja o seu até que sobre no máximo 3 nomes;
+
+- Rodar o programa e ler a Exceção de NomeException;
+
+- Remover seu nome da lista;
+
+- Rodar o programa e não ver mais erros, apenas "Fim da aplicação";
