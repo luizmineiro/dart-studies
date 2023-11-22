@@ -11,7 +11,7 @@ void main() {
     }
   } on NumerosMenorOuIgaulA10Exepition catch (error) {
     print(error.message);
-  } catch (e) {}
+  }
 }
 
 class NumerosMenorOuIgaulA10Exepition implements Exception {
