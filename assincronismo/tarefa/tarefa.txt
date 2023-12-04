@@ -1,0 +1,25 @@
+​- Criar uma função assíncrona chamada retornaNumeroAssincrono que retornará um número inteiro que será 
+
+passado pelo usuário por parâmetro de posição depois de 3 segundos, e dará erro (NumeroMaiorQueVinteException) 
+
+caso o número seja maior que 20;
+
+- Criar a função main e nela invocar a função acima (retornaNumeroAssincrono) usando "then", adicionar o 
+
+número 50 no parâmetro, tratar o erro imprimindo "Valores maior que 20 não podem ser usados" e imprimir 
+
+"Fim da função" quando a função for completa;
+
+- Invocar novamente a função retornaNumeroAssincrono porém dessa vez usando "async" e "await", adicionar o 
+
+número 15 no parâmetro, e salvar o número que será retornado em uma variável chamada numero. 
+
+Ao final imprimir no console "Número retornado: $numero";
+
+- Criar uma Lista de Future chamada listaDeFutures e nela adicionar a função retornaNumeroAssincrono 3 vezes
+
+adicionando os seguintes parâmetros: 2, 5 e 3;
+
+- Invocar as funções da lista listaDeFutures usando Future.wait, somar o resultado guardando em uma variável
+
+chamada resultado e imprimir "Resultado: $resultado".
