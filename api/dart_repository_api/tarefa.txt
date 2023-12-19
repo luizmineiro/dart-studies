@@ -1,0 +1,23 @@
+​1.0 Usando o projeto da aula 13 adicionar os seguintes métodos no repository:
+
+    - getPost onde será retornado um Future<PostModel> e será passado por parâmetro de posição o id do post 
+
+    a ser pedido enviado para a API;
+
+    - updatePost (atualizarPost em inglês, lembrando que é sempre boas práticas escrever o código em inglês 
+
+    para caso você consiga um emprego em uma multinacional) onde será retornado um Future<PostModel> e será passado 
+
+    por parâmetro de posição o id do post e um Map com os dados à serem atualizados usando PATCH para a atualização;
+
+    - deletePost onde será retornado um Future<void> e será passado por parâmetro de posição o id do post 
+
+    a ser deletado;
+
+    - createPost onde será retornado um Future<PostModel> e será passado por parâmetro de posição um Map do post 
+
+    a ser criado.
+
+2.0 No arquivo aula_13_repository invocar as 4 funções criadas acima e imprimir todos os valores menos do deletePost já 
+
+que vai retornar um Future<void>.

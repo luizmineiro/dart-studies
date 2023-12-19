@@ -39,4 +39,61 @@ class Repository {
       return [];
     }
   }
+
+  Future<PostModel?> getPost(int id) async {
+    final response = await http.get(Uri.parse('${url}posts/$id'));
+
+    if (response.statusCode < 300) {
+      final responseBodyMap = jsonDecode(response.body);
+
+      return PostModel.fromMap(responseBodyMap);
+    } else {
+      print("OCORREU ALGUM ERRO");
+      return null;
+    }
+  }
+
+  Future<PostModel?> updatePost(int id, Map<String, dynamic> map) async {
+    final response = await http.patch(
+      Uri.parse("${url}posts/$id"),
+      body: jsonEncode(map),
+      headers: {
+        'Content-type': 'application/json; charset=UTF-8',
+      },
+    );
+    if (response.statusCode < 300) {
+      final responseBodyMap = jsonDecode(response.body);
+      return PostModel.fromMap(responseBodyMap);
+    } else {
+      print("OCORREU ALGUM ERRO");
+      return null;
+    }
+  }
+
+  Future<void> deletePost(int id) async {
+    final response = await http.delete(Uri.parse('${url}posts/$id'));
+
+    if (response.statusCode >= 300) {
+      print("OCORREU ALGUM ERRO");
+    } else {
+      print("O POST FOI DELETADO COM SUCESSO");
+    }
+  }
+
+  Future<PostModel?> createPost(Map<String, dynamic> map) async {
+    final response = await http.post(
+      Uri.parse('${url}posts'),
+      body: jsonEncode(map),
+      headers: {
+        'Content-type': 'application/json; charset=UTF-8',
+      },
+    );
+    if (response.statusCode < 300) {
+      final map = jsonDecode(response.body);
+      return PostModel.fromMap(map);
+    } else {
+      print("OCORREU ALGUM ERRO");
+      return null;
+    }
+  }
 }
