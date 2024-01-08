@@ -1,0 +1,25 @@
+1.0
+
+    - Criar uma StreamController chamada streamCtrl;
+
+    - Ouvir as alterações desse streamCtrl filtrando apenas números menores que 3 e imprimindo os eventos no console;
+
+    - Adicionar 3 números inteiros para dentro da Stream (1, 2 e 3);
+
+    - Fechar (close) a Stream;
+
+2.0
+
+    - Criar uma função que retorna uma Stream<String>;
+
+    - Dentro da função criar uma lista com 5 nomes incluindo o seu;
+
+    - Fazer um loop pela lista e retonar cada nome, caso o nome seja seu jogar uma exceção (Exception)
+
+    com a seguinte mensagem "Seu próprio nome não é permitido";
+
+    - Invocar a função e ouvi-la duas vezes, caso haja algum erro imprimi-lo no 
+
+    console e cancelar a Stream;
+
+
